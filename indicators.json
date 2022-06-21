@@ -14,6 +14,22 @@
           "status": "notstarted"
         },
         {
+          "id": "1-1-1-a",
+          "title": "global_indicators.1-1-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/Open-SDG-Site/1-1-1-a",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-1-2",
+          "title": "global_indicators.1-1-2-title Add",
+          "description": "",
+          "keywords": "",
+          "href": "/Open-SDG-Site/1-1-2",
+          "status": "notstarted"
+        },
+        {
           "id": "1-2-1",
           "title": "Proportion of population living below the national poverty line, by sex and age",
           "description": "",
@@ -1259,6 +1275,14 @@
           "description": "",
           "keywords": "",
           "href": "/Open-SDG-Site/11-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-5-3",
+          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
+          "description": "",
+          "keywords": "",
+          "href": "/Open-SDG-Site/11-5-3",
           "status": "notstarted"
         },
         {

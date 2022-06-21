@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://develop2022.github.io/Open-SDG-Data/es',
+  remoteDataBaseUrl: 'https://develop2022.github.io/Open-SDG-Data/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'es',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Categories - Indicadores para los Objetivos de Desarrollo Sostenible</title>
+    <title>Categories - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Open-SDG-Site/assets/css/style.css?v=20220327080450">
+        <link rel="stylesheet" href="/Open-SDG-Site/assets/css/style.css?v=20220621175848">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,21 +147,21 @@ var translations = {
         
 
     </head>
-<body class="language-es
+<body class="language-en
 layout-categories
 ">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"Alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
   </div>
 </div>
 
@@ -171,16 +171,16 @@ layout-categories
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/Open-SDG-Site/es/" id="home">
-    <img src="/Open-SDG-Site/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo" />
+      <a class="navbar-brand" href="/Open-SDG-Site/" id="home">
+    <img src="/Open-SDG-Site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
         
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Desactivar alto contraste"
-           aria-label="Desactivar alto contraste"
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -191,8 +191,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Habilitar alto contraste"
-           aria-label="Habilitar alto contraste"
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -209,11 +209,15 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/Open-SDG-Site/categories/">
-              English
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-hy">
+            <a href="/Open-SDG-Site/hy/es/categories/">
+              ՀԱՅԵՐԵՆ
+            </a>
+          </li><li class="language-option-ru">
+            <a href="/Open-SDG-Site/ru/es/categories/">
+              Pусский
             </a>
           </li></ul>
   </div>
@@ -224,10 +228,10 @@ data-event-label="high"
 
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
-  <form action="/Open-SDG-Site/es/search/">
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <input type="text" name="q" id="indicator_search" title="Buscar" /><!--
-    --><button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/Open-SDG-Site/search/">
+    <label class="sr-only" for="indicator_search">Search</label>
+    <input type="text" name="q" id="indicator_search" title="Search" /><!--
+    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -243,11 +247,15 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/Open-SDG-Site/categories/">
-              English
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-hy">
+            <a href="/Open-SDG-Site/hy/es/categories/">
+              ՀԱՅԵՐԵՆ
+            </a>
+          </li><li class="language-option-ru">
+            <a href="/Open-SDG-Site/ru/es/categories/">
+              Pусский
             </a>
           </li></ul>
   </div>
@@ -258,8 +266,8 @@ data-event-label="high"
         </li>
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Desactivar alto contraste"
-           aria-label="Desactivar alto contraste"
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -270,8 +278,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Habilitar alto contraste"
-           aria-label="Habilitar alto contraste"
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -290,19 +298,19 @@ data-event-label="high"
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menú de alternancia. Haga clic para ampliar o reducir el menú."
+        aria-label="Menu toggle. Click to expand or collapse the menu."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/goals">Objetivos</a>
+    <a href="/Open-SDG-Site/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/reporting-status">Estado de informes</a>
+    <a href="/Open-SDG-Site/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/about">Acerca de</a>
+    <a href="/Open-SDG-Site/about">About</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/faq">FAQ</a>
+    <a href="/Open-SDG-Site/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/news">Actualizaciones</a>
+    <a href="/Open-SDG-Site/news">Updates</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -314,11 +322,15 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/Open-SDG-Site/categories/">
-              English
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-hy">
+            <a href="/Open-SDG-Site/hy/es/categories/">
+              ՀԱՅԵՐԵՆ
+            </a>
+          </li><li class="language-option-ru">
+            <a href="/Open-SDG-Site/ru/es/categories/">
+              Pусский
             </a>
           </li></ul>
   </div>
@@ -331,8 +343,8 @@ data-event-label="high"
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Desactivar alto contraste"
-           aria-label="Desactivar alto contraste"
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -343,8 +355,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Habilitar alto contraste"
-           aria-label="Habilitar alto contraste"
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -361,29 +373,29 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."
+        aria-label="Search toggle. Click to expand or collapse the search bar."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+        <button data-target="search-mobile" aria-expanded="false">Search</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/Open-SDG-Site/es/search/">
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" /><!--
-    --><button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/Open-SDG-Site/search/">
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
+    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/goals">Objetivos</a>
+    <a href="/Open-SDG-Site/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/reporting-status">Estado de informes</a>
+    <a href="/Open-SDG-Site/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/about">Acerca de</a>
+    <a href="/Open-SDG-Site/about">About</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/faq">FAQ</a>
+    <a href="/Open-SDG-Site/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/Open-SDG-Site/es/news">Actualizaciones</a>
+    <a href="/Open-SDG-Site/news">Updates</a>
 </li>
 
 </ul>
@@ -414,6 +426,10 @@ data-event-label="high"
               <time datetime="2020-01-10T00:00:00+00:00" itemprop="datePublished">Jan 10, 2020</time> - <a href="/Open-SDG-Site/es/test-post-1/">Test Post 1</a>
             </article>
             
+            <article class="archive-item">
+              <time datetime="2020-01-10T00:00:00+00:00" itemprop="datePublished">Jan 10, 2020</time> - <a href="/Open-SDG-Site/test-post-1/">Test Post 1</a>
+            </article>
+            
           </div>
         </div>
       
@@ -427,10 +443,10 @@ data-event-label="high"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
-                <a href="/Open-SDG-Site/es/contact-us">Contáctenos</a>
+                <a href="/Open-SDG-Site/contact-us">Contact us</a>
                 
                 </li>
               <li>
@@ -444,13 +460,13 @@ data-event-label="high"
                 
                 </li>
               <li>
-                <a href="/Open-SDG-Site/es/about/cookies-and-privacy/">Galletas</a>
+                <a href="/Open-SDG-Site/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
             
             
-            <li><a href="/Open-SDG-Site/es/config">Configuration</a></li>
+            <li><a href="/Open-SDG-Site/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -479,17 +495,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'Ocultar';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Buscar';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/Open-SDG-Site/assets/js/sdg.js?v=20220327080450'></script>
+<script src='/Open-SDG-Site/assets/js/sdg.js?v=20220621175848'></script>
 
 
     
     
-    <script src="/Open-SDG-Site/assets/js/custom.js?v=20220327080450"></script><script>
+    <script src="/Open-SDG-Site/assets/js/custom.js?v=20220621175848"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
